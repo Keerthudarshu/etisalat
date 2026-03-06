@@ -5,6 +5,7 @@
     --primary-light: #ffe0e0;
     --accent: #c0001a;
 }
+
 :root {
     --primary-teal: #005C52;
     --primary-green: #71BE44;
@@ -2939,15 +2940,18 @@ body {
 
     .section-title-ultimate .gradient-bar,
     .section-title-essential .gradient-bar {
-        min-width: 280px !important;
-        height: 40px !important;
-        padding: 0 20px !important;
+        min-width: 250px !important;
+        height: auto !important;
+        min-height: 40px !important;
+        padding: 5px 20px !important;
     }
 
     .section-title-ultimate span,
     .section-title-essential span {
-        font-size: 1.8rem !important;
+        font-size: 1.6rem !important;
         letter-spacing: 1px !important;
+        line-height: 1.2 !important;
+        display: block !important;
     }
 }
 
@@ -2972,15 +2976,18 @@ body {
 
     .section-title-ultimate .gradient-bar,
     .section-title-essential .gradient-bar {
-        min-width: 200px !important;
-        height: 36px !important;
-        padding: 0 15px !important;
+        min-width: 180px !important;
+        height: auto !important;
+        min-height: 36px !important;
+        padding: 5px 15px !important;
     }
 
     .section-title-ultimate span,
     .section-title-essential span {
-        font-size: 1.4rem !important;
+        font-size: 1.3rem !important;
         letter-spacing: 0.5px !important;
+        line-height: 1.2 !important;
+        display: block !important;
     }
 }
 

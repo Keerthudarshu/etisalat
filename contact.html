@@ -205,8 +205,9 @@
                 --text-dark: #1a1a1a;
                 --text-muted: #666;
                 --radius: 18px;
-                --shadow: 0 8px 32px rgba(226,0,26,0.10);
+                --shadow: 0 8px 32px rgba(226, 0, 26, 0.10);
             }
+
             .ct-hero {
                 background: linear-gradient(135deg, var(--red-1) 0%, var(--red-2) 100%);
                 padding: 70px 24px 100px;
@@ -214,25 +215,32 @@
                 position: relative;
                 overflow: hidden;
             }
+
             .ct-hero::before {
                 content: '';
                 position: absolute;
-                top: -60px; right: -60px;
-                width: 340px; height: 340px;
+                top: -60px;
+                right: -60px;
+                width: 340px;
+                height: 340px;
                 border-radius: 50%;
-                background: rgba(255,255,255,0.06);
+                background: rgba(255, 255, 255, 0.06);
             }
+
             .ct-hero::after {
                 content: '';
                 position: absolute;
-                bottom: -80px; left: -40px;
-                width: 260px; height: 260px;
+                bottom: -80px;
+                left: -40px;
+                width: 260px;
+                height: 260px;
                 border-radius: 50%;
-                background: rgba(255,255,255,0.05);
+                background: rgba(255, 255, 255, 0.05);
             }
+
             .ct-hero-badge {
                 display: inline-block;
-                background: rgba(255,255,255,0.18);
+                background: rgba(255, 255, 255, 0.18);
                 color: #fff;
                 font-size: 12px;
                 font-weight: 700;
@@ -242,6 +250,7 @@
                 padding: 6px 20px;
                 margin-bottom: 18px;
             }
+
             .ct-hero h1 {
                 color: #fff;
                 font-size: clamp(2rem, 5vw, 3rem);
@@ -251,16 +260,29 @@
                 position: relative;
                 z-index: 1;
             }
+
             .ct-hero p {
-                color: rgba(255,255,255,0.85);
+                color: rgba(255, 255, 255, 0.85);
                 font-size: 1.05rem;
                 max-width: 560px;
                 margin: 0 auto;
                 position: relative;
                 z-index: 1;
             }
-            .ct-hero-wave { position: absolute; bottom: 0; left: 0; width: 100%; line-height: 0; }
-            .ct-cards-section { background: var(--off-white); padding: 0 24px 40px; }
+
+            .ct-hero-wave {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                line-height: 0;
+            }
+
+            .ct-cards-section {
+                background: var(--off-white);
+                padding: 0 24px 40px;
+            }
+
             .ct-cards-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
@@ -270,6 +292,7 @@
                 position: relative;
                 z-index: 10;
             }
+
             .ct-card {
                 background: #fff;
                 border-radius: var(--radius);
@@ -279,92 +302,453 @@
                 transition: transform 0.3s, box-shadow 0.3s;
                 border-top: 4px solid var(--red-1);
             }
-            .ct-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(226,0,26,0.16); }
+
+            .ct-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 18px 40px rgba(226, 0, 26, 0.16);
+            }
+
             .ct-card-icon {
-                width: 56px; height: 56px;
+                width: 56px;
+                height: 56px;
                 background: linear-gradient(135deg, var(--red-1), var(--red-2));
                 border-radius: 14px;
-                display: flex; align-items: center; justify-content: center;
-                margin: 0 auto 16px; font-size: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 16px;
+                font-size: 22px;
             }
-            .ct-card h3 { font-size: 14px; font-weight: 700; color: var(--text-dark); margin: 0 0 8px; text-transform: uppercase; letter-spacing: 0.5px; }
-            .ct-card p, .ct-card a { font-size: 14px; color: var(--text-muted); margin: 0; line-height: 1.5; text-decoration: none; }
-            .ct-card a:hover { color: var(--red-1); }
-            .ct-card-link { display: inline-block; margin-top: 10px; color: var(--red-1); font-weight: 700; font-size: 13px; border-bottom: 2px solid var(--red-1); padding-bottom: 1px; text-decoration: none; }
-            .ct-main { background: var(--off-white); padding: 20px 24px 60px; }
+
+            .ct-card h3 {
+                font-size: 14px;
+                font-weight: 700;
+                color: var(--text-dark);
+                margin: 0 0 8px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .ct-card p,
+            .ct-card a {
+                font-size: 14px;
+                color: var(--text-muted);
+                margin: 0;
+                line-height: 1.5;
+                text-decoration: none;
+                word-wrap: break-word;
+                word-break: break-word;
+            }
+
+            .ct-card a:hover {
+                color: var(--red-1);
+            }
+
+            .ct-card-link {
+                display: inline-block;
+                margin-top: 10px;
+                color: var(--red-1);
+                font-weight: 700;
+                font-size: 13px;
+                border-bottom: 2px solid var(--red-1);
+                padding-bottom: 1px;
+                text-decoration: none;
+            }
+
+            .ct-main {
+                background: var(--off-white);
+                padding: 20px 24px 60px;
+            }
+
             .ct-main-inner {
-                max-width: 1100px; margin: 0 auto;
-                display: grid; grid-template-columns: 1fr 420px; gap: 32px; align-items: start;
+                max-width: 1100px;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 420px;
+                gap: 32px;
+                align-items: start;
             }
-            .ct-form-panel { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 40px 36px; }
-            .ct-form-panel h2 { font-size: 1.7rem; font-weight: 900; color: var(--text-dark); margin: 0 0 6px; }
-            .ct-form-panel h2 span { color: var(--red-1); }
-            .ct-subtext { color: var(--text-muted); font-size: 15px; margin: 0 0 28px; }
-            .ct-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-            .ct-field { margin-bottom: 16px; }
-            .ct-field label { display: block; font-size: 13px; font-weight: 600; color: var(--text-dark); margin-bottom: 6px; }
-            .ct-field input, .ct-field select, .ct-field textarea {
-                width: 100%; padding: 13px 16px; border: 1.5px solid #e0e0e0;
-                border-radius: 10px; font-size: 14px; color: var(--text-dark);
-                background: #fafafa; outline: none; transition: border-color 0.25s, box-shadow 0.25s;
-                box-sizing: border-box; font-family: inherit;
+
+            .ct-form-panel {
+                background: #fff;
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                padding: 40px 36px;
             }
-            .ct-field input:focus, .ct-field select:focus, .ct-field textarea:focus {
-                border-color: var(--red-1); box-shadow: 0 0 0 3px rgba(226,0,26,0.10); background: #fff;
+
+            .ct-form-panel h2 {
+                font-size: 1.7rem;
+                font-weight: 900;
+                color: var(--text-dark);
+                margin: 0 0 6px;
             }
-            .ct-field textarea { resize: vertical; min-height: 120px; }
+
+            .ct-form-panel h2 span {
+                color: var(--red-1);
+            }
+
+            .ct-subtext {
+                color: var(--text-muted);
+                font-size: 15px;
+                margin: 0 0 28px;
+            }
+
+            .ct-form-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .ct-field {
+                margin-bottom: 16px;
+            }
+
+            .ct-field label {
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--text-dark);
+                margin-bottom: 6px;
+            }
+
+            .ct-field input,
+            .ct-field select,
+            .ct-field textarea {
+                width: 100%;
+                padding: 13px 16px;
+                border: 1.5px solid #e0e0e0;
+                border-radius: 10px;
+                font-size: 14px;
+                color: var(--text-dark);
+                background: #fafafa;
+                outline: none;
+                transition: border-color 0.25s, box-shadow 0.25s;
+                box-sizing: border-box;
+                font-family: inherit;
+            }
+
+            .ct-field input:focus,
+            .ct-field select:focus,
+            .ct-field textarea:focus {
+                border-color: var(--red-1);
+                box-shadow: 0 0 0 3px rgba(226, 0, 26, 0.10);
+                background: #fff;
+            }
+
+            .ct-field textarea {
+                resize: vertical;
+                min-height: 120px;
+            }
+
             .ct-submit-btn {
-                width: 100%; padding: 15px;
+                width: 100%;
+                padding: 15px;
                 background: linear-gradient(135deg, var(--red-1), var(--red-2));
-                color: #fff; font-size: 16px; font-weight: 800; border: none;
-                border-radius: 12px; cursor: pointer; letter-spacing: 0.5px;
-                transition: opacity 0.2s, transform 0.2s; margin-top: 8px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 800;
+                border: none;
+                border-radius: 12px;
+                cursor: pointer;
+                letter-spacing: 0.5px;
+                transition: opacity 0.2s, transform 0.2s;
+                margin-top: 8px;
             }
-            .ct-submit-btn:hover { opacity: 0.92; transform: translateY(-2px); }
-            #ct-response { margin-top: 12px; font-size: 14px; text-align: center; font-weight: 600; color: var(--red-1); }
-            .ct-info-panel { display: flex; flex-direction: column; gap: 20px; }
+
+            .ct-submit-btn:hover {
+                opacity: 0.92;
+                transform: translateY(-2px);
+            }
+
+            #ct-response {
+                margin-top: 12px;
+                font-size: 14px;
+                text-align: center;
+                font-weight: 600;
+                color: var(--red-1);
+            }
+
+            .ct-info-panel {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
             .ct-info-box {
                 background: linear-gradient(135deg, var(--red-1) 0%, var(--red-2) 100%);
-                border-radius: var(--radius); padding: 32px 28px; color: #fff;
+                border-radius: var(--radius);
+                padding: 32px 28px;
+                color: #fff;
             }
-            .ct-info-box h3 { font-size: 1.2rem; font-weight: 800; margin: 0 0 20px; }
-            .ct-info-item { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 18px; }
-            .ct-info-item:last-child { margin-bottom: 0; }
-            .ct-info-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.18); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
-            .ct-info-text strong { display: block; font-size: 12px; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 2px; }
-            .ct-info-text span { font-size: 15px; font-weight: 600; }
-            .ct-info-text a { color: #fff; text-decoration: none; }
-            .ct-info-text a:hover { opacity: 0.85; }
-            .ct-hours-box { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 24px 28px; border-left: 4px solid var(--red-1); }
-            .ct-hours-box h3 { font-size: 15px; font-weight: 800; color: var(--text-dark); margin: 0 0 14px; }
-            .ct-hours-row { display: flex; justify-content: space-between; font-size: 14px; padding: 7px 0; border-bottom: 1px solid #f0f0f0; color: var(--text-dark); }
-            .ct-hours-row:last-child { border-bottom: none; }
-            .ct-hours-row .open { color: var(--red-1); font-weight: 700; }
-            .ct-map-section { padding: 0 24px 60px; background: var(--off-white); }
-            .ct-map-inner { max-width: 1100px; margin: 0 auto; }
-            .ct-map-inner h2 { font-size: 1.5rem; font-weight: 900; color: var(--text-dark); margin: 0 0 20px; }
-            .ct-map-inner h2 span { color: var(--red-1); }
-            .ct-map-frame { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: none; display: block; }
-            .ct-faq-section { background: linear-gradient(135deg, var(--red-1) 0%, var(--red-2) 100%); padding: 56px 24px; }
-            .ct-faq-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-            .ct-faq-inner h2 { color: #fff; font-size: 1.8rem; font-weight: 900; margin: 0 0 8px; }
-            .ct-faq-inner > p { color: rgba(255,255,255,0.8); margin: 0 0 36px; font-size: 15px; }
-            .ct-faq-list { text-align: left; }
-            .ct-faq-item { background: rgba(255,255,255,0.12); border-radius: 12px; margin-bottom: 12px; overflow: hidden; }
-            .ct-faq-q { padding: 18px 20px; font-size: 15px; font-weight: 700; color: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
-            .ct-faq-q-icon { font-size: 22px; font-weight: 300; transition: transform 0.3s; }
-            .ct-faq-a { display: none; padding: 0 20px 18px; font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.65; }
-            .ct-faq-item.open .ct-faq-q-icon { transform: rotate(45deg); }
-            .ct-faq-item.open .ct-faq-a { display: block; }
+
+            .ct-info-box h3 {
+                font-size: 1.2rem;
+                font-weight: 800;
+                margin: 0 0 20px;
+            }
+
+            .ct-info-item {
+                display: flex;
+                align-items: flex-start;
+                gap: 14px;
+                margin-bottom: 18px;
+            }
+
+            .ct-info-item:last-child {
+                margin-bottom: 0;
+            }
+
+            .ct-info-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.18);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                flex-shrink: 0;
+            }
+
+            .ct-info-text strong {
+                display: block;
+                font-size: 12px;
+                opacity: 0.7;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                margin-bottom: 2px;
+            }
+
+            .ct-info-text span {
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .ct-info-text a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .ct-info-text a:hover {
+                opacity: 0.85;
+            }
+
+            .ct-hours-box {
+                background: #fff;
+                border-radius: var(--radius);
+                box-shadow: var(--shadow);
+                padding: 24px 28px;
+                border-left: 4px solid var(--red-1);
+            }
+
+            .ct-hours-box h3 {
+                font-size: 15px;
+                font-weight: 800;
+                color: var(--text-dark);
+                margin: 0 0 14px;
+            }
+
+            .ct-hours-row {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+                padding: 7px 0;
+                border-bottom: 1px solid #f0f0f0;
+                color: var(--text-dark);
+            }
+
+            .ct-hours-row:last-child {
+                border-bottom: none;
+            }
+
+            .ct-hours-row .open {
+                color: var(--red-1);
+                font-weight: 700;
+            }
+
+            .ct-map-section {
+                padding: 0 24px 60px;
+                background: var(--off-white);
+            }
+
+            .ct-map-inner {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+
+            .ct-map-inner h2 {
+                font-size: 1.5rem;
+                font-weight: 900;
+                color: var(--text-dark);
+                margin: 0 0 20px;
+            }
+
+            .ct-map-inner h2 span {
+                color: var(--red-1);
+            }
+
+            .ct-map-frame {
+                border-radius: var(--radius);
+                overflow: hidden;
+                box-shadow: var(--shadow);
+                border: none;
+                display: block;
+            }
+
+            .ct-faq-section {
+                background: linear-gradient(135deg, var(--red-1) 0%, var(--red-2) 100%);
+                padding: 56px 24px;
+            }
+
+            .ct-faq-inner {
+                max-width: 800px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .ct-faq-inner h2 {
+                color: #fff;
+                font-size: 1.8rem;
+                font-weight: 900;
+                margin: 0 0 8px;
+            }
+
+            .ct-faq-inner>p {
+                color: rgba(255, 255, 255, 0.8);
+                margin: 0 0 36px;
+                font-size: 15px;
+            }
+
+            .ct-faq-list {
+                text-align: left;
+            }
+
+            .ct-faq-item {
+                background: rgba(255, 255, 255, 0.12);
+                border-radius: 12px;
+                margin-bottom: 12px;
+                overflow: hidden;
+            }
+
+            .ct-faq-q {
+                padding: 18px 20px;
+                font-size: 15px;
+                font-weight: 700;
+                color: #fff;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                user-select: none;
+            }
+
+            .ct-faq-q-icon {
+                font-size: 22px;
+                font-weight: 300;
+                transition: transform 0.3s;
+            }
+
+            .ct-faq-a {
+                display: none;
+                padding: 0 20px 18px;
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.85);
+                line-height: 1.65;
+            }
+
+            .ct-faq-item.open .ct-faq-q-icon {
+                transform: rotate(45deg);
+            }
+
+            .ct-faq-item.open .ct-faq-a {
+                display: block;
+            }
+
             @media (max-width: 900px) {
-                .ct-cards-grid { grid-template-columns: repeat(2, 1fr); }
-                .ct-main-inner { grid-template-columns: 1fr; }
+                .ct-cards-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                .ct-main-inner {
+                    grid-template-columns: 1fr;
+                }
             }
+
             @media (max-width: 560px) {
-                .ct-form-row { grid-template-columns: 1fr; }
-                .ct-form-panel { padding: 28px 20px; }
-                .ct-cards-grid { grid-template-columns: 1fr 1fr; }
-                .ct-hero { padding: 50px 20px 80px; }
+                .ct-form-row {
+                    grid-template-columns: 1fr;
+                }
+
+                .ct-form-panel {
+                    padding: 28px 20px;
+                }
+
+                .ct-cards-grid {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+                    gap: 12px;
+                }
+
+                .ct-hero {
+                    padding: 50px 20px 80px;
+                }
+            }
+
+            /* ==== ADDED MOBILE RESPONSIVENESS FIXES ==== */
+            @media (max-width: 768px) {
+
+                html,
+                body,
+                main {
+                    overflow-x: hidden !important;
+                    width: 100% !important;
+                    max-width: 100vw !important;
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
+
+                .ct-main-content {
+                    flex-direction: column !important;
+                    padding: 16px !important;
+                    gap: 24px !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                }
+
+                .ct-form-panel,
+                .ct-info-panel {
+                    width: 100% !important;
+                    padding: 24px 16px !important;
+                    box-sizing: border-box !important;
+                    margin: 0 !important;
+                }
+
+                .ct-quick-links {
+                    flex-direction: column !important;
+                    gap: 16px !important;
+                    padding: 0 16px !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                }
+
+                .ct-card {
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                    margin: 0 !important;
+                }
+
+                .hero-banner-content {
+                    padding: 40px 16px !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                }
+
+                .faq-container,
+                .map-section {
+                    padding: 16px !important;
+                    width: 100% !important;
+                    box-sizing: border-box !important;
+                    margin: 0 !important;
+                }
             }
         </style>
 
@@ -372,10 +756,11 @@
         <section class="ct-hero">
             <div class="ct-hero-badge">Etisalat by e&amp; &middot; Authorized Partner</div>
             <h1>Get In Touch With Us</h1>
-            <p>Have questions about our plans? Our team is ready to help you choose the right Etisalat solution for your home or business.</p>
+            <p>Have questions about our plans? Our team is ready to help you choose the right Etisalat solution for your
+                home or business.</p>
             <div class="ct-hero-wave">
                 <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                    <path d="M0 60 C360 0 1080 0 1440 60 L1440 60 L0 60 Z" fill="#fafafa"/>
+                    <path d="M0 60 C360 0 1080 0 1440 60 L1440 60 L0 60 Z" fill="#fafafa" />
                 </svg>
             </div>
         </section>
@@ -419,7 +804,8 @@
             <div class="ct-main-inner">
                 <div class="ct-form-panel">
                     <h2>Send Us a <span>Message</span></h2>
-                    <p class="ct-subtext">Fill in your details and our team will get back to you within one business day.</p>
+                    <p class="ct-subtext">Fill in your details and our team will get back to you within one business
+                        day.</p>
                     <form id="contact-form">
                         <div class="ct-form-row">
                             <div class="ct-field">
@@ -490,10 +876,13 @@
                     </div>
                     <div class="ct-hours-box">
                         <h3>&#9200; Business Hours</h3>
-                        <div class="ct-hours-row"><span>Monday &ndash; Friday</span><span class="open">9:00 AM &ndash; 9:00 PM</span></div>
-                        <div class="ct-hours-row"><span>Saturday</span><span class="open">10:00 AM &ndash; 7:00 PM</span></div>
+                        <div class="ct-hours-row"><span>Monday &ndash; Friday</span><span class="open">9:00 AM &ndash;
+                                9:00 PM</span></div>
+                        <div class="ct-hours-row"><span>Saturday</span><span class="open">10:00 AM &ndash; 7:00
+                                PM</span></div>
                         <div class="ct-hours-row"><span>Sunday</span><span style="color:#999">Closed</span></div>
-                        <div class="ct-hours-row"><span>24/7 Call Center</span><span class="open">Always Open</span></div>
+                        <div class="ct-hours-row"><span>24/7 Call Center</span><span class="open">Always Open</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -503,13 +892,10 @@
         <section class="ct-map-section" id="ct-map">
             <div class="ct-map-inner">
                 <h2>Find Us on the <span>Map</span></h2>
-                <iframe
-                    class="ct-map-frame"
+                <iframe class="ct-map-frame"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.2048655985!2d55.3027!3d25.2285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDEzJzQyLjYiTiA1NcKwMTgnMDkuNyJF!5e0!3m2!1sen!2sae!4v1630000000000!5m2!1sen!2sae"
-                    width="100%" height="380" style="border:0;"
-                    allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Etisalat by e&amp; Office Location Dubai">
+                    width="100%" height="380" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Etisalat by e&amp; Office Location Dubai">
                 </iframe>
             </div>
         </section>
@@ -525,28 +911,33 @@
                             How quickly can I get Etisalat internet installed?
                             <span class="ct-faq-q-icon">+</span>
                         </div>
-                        <div class="ct-faq-a">Installation is typically completed within 2&ndash;5 business days after order confirmation. Our team will contact you to schedule a convenient time.</div>
+                        <div class="ct-faq-a">Installation is typically completed within 2&ndash;5 business days after
+                            order confirmation. Our team will contact you to schedule a convenient time.</div>
                     </div>
                     <div class="ct-faq-item">
                         <div class="ct-faq-q" onclick="this.parentElement.classList.toggle('open')">
                             What business internet plans are available?
                             <span class="ct-faq-q-icon">+</span>
                         </div>
-                        <div class="ct-faq-a">We offer Business Starter Pro (1 Gbps, AED 279/month), Business Ultimate 200Mbps and 400Mbps fiber plans, and 5G Wireless plans. All include free installation and optional landline services.</div>
+                        <div class="ct-faq-a">We offer Business Starter Pro (1 Gbps, AED 279/month), Business Ultimate
+                            200Mbps and 400Mbps fiber plans, and 5G Wireless plans. All include free installation and
+                            optional landline services.</div>
                     </div>
                     <div class="ct-faq-item">
                         <div class="ct-faq-q" onclick="this.parentElement.classList.toggle('open')">
                             Can I port my existing number to Etisalat?
                             <span class="ct-faq-q-icon">+</span>
                         </div>
-                        <div class="ct-faq-a">Yes! We offer 3 months free porting on most business plans. Contact our sales team and we will handle the entire process for you.</div>
+                        <div class="ct-faq-a">Yes! We offer 3 months free porting on most business plans. Contact our
+                            sales team and we will handle the entire process for you.</div>
                     </div>
                     <div class="ct-faq-item">
                         <div class="ct-faq-q" onclick="this.parentElement.classList.toggle('open')">
                             Is there a contract commitment required?
                             <span class="ct-faq-q-icon">+</span>
                         </div>
-                        <div class="ct-faq-a">Most plans require a 12-month commitment to get the best pricing and priority support. Contact us for flexible options if needed.</div>
+                        <div class="ct-faq-a">Most plans require a 12-month commitment to get the best pricing and
+                            priority support. Contact us for flexible options if needed.</div>
                     </div>
                 </div>
             </div>
