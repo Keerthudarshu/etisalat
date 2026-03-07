@@ -834,9 +834,10 @@
         }
 
 
-        
+
         /* ==== CONSOLIDATED MOBILE RESPONSIVENESS (Premium Carousel & Offers) ==== */
         @media (max-width: 768px) {
+
             /* 1. Corporate Content Stacking */
             .corporate-content {
                 display: flex !important;
@@ -846,7 +847,10 @@
                 box-sizing: border-box !important;
                 width: 100% !important;
             }
-            .features-column, .contact-form, .promo-block {
+
+            .features-column,
+            .contact-form,
+            .promo-block {
                 width: 100% !important;
                 box-sizing: border-box !important;
                 margin: 0 !important;
@@ -859,9 +863,9 @@
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
                 overflow-x: auto !important;
-                padding: 15px 24px 35px !important; 
+                padding: 15px 24px 35px !important;
                 scroll-snap-type: x mandatory !important;
-                scroll-padding: 0 24px !important; 
+                scroll-padding: 0 24px !important;
                 -webkit-overflow-scrolling: touch;
                 justify-content: flex-start !important;
                 gap: 16px !important;
@@ -869,16 +873,17 @@
                 width: 100% !important;
                 box-sizing: border-box !important;
             }
-            .plan-v3-grid > * {
-                flex: 0 0 85% !important; 
+
+            .plan-v3-grid>* {
+                flex: 0 0 85% !important;
                 max-width: 85% !important;
-                scroll-snap-align: start !important; 
+                scroll-snap-align: start !important;
                 margin-bottom: 0 !important;
-                border: 2px solid #e2001a !important; 
+                border: 2px solid #e2001a !important;
                 box-sizing: border-box !important;
                 background: #fff !important;
                 border-radius: 20px !important;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
             }
 
             /* 3. Current Offers Slider */
@@ -897,6 +902,7 @@
                 width: 100% !important;
                 box-sizing: border-box !important;
             }
+
             .current-offer-card {
                 flex: 0 0 85% !important;
                 max-width: 85% !important;
@@ -907,14 +913,39 @@
             }
 
             /* Mobile-specific internal styling */
-            .plan-v3-grid .plan-v3-title { font-size: 20px !important; line-height: 1.2 !important; margin-bottom: 12px !important; }
-            .plan-v3-grid .plan-v3-price { font-size: 22px !important; }
-            .plan-v3-grid .plan-v3-badge { font-size: 11px !important; padding: 2px 8px !important; }
-            
+            .plan-v3-grid .plan-v3-title {
+                font-size: 20px !important;
+                line-height: 1.2 !important;
+                margin-bottom: 12px !important;
+            }
+
+            .plan-v3-grid .plan-v3-price {
+                font-size: 22px !important;
+            }
+
+            .plan-v3-grid .plan-v3-badge {
+                font-size: 11px !important;
+                padding: 2px 8px !important;
+            }
+
             /* Branded mobile scrollbar */
-            .plan-v3-grid::-webkit-scrollbar, .current-offers-grid::-webkit-scrollbar { height: 5px; }
-            .plan-v3-grid::-webkit-scrollbar-track, .current-offers-grid::-webkit-scrollbar-track { background: #f1f1f1; margin: 0 24px; border-radius: 10px; }
-            .plan-v3-grid::-webkit-scrollbar-thumb, .current-offers-grid::-webkit-scrollbar-thumb { background: #e2001a; border-radius: 10px; }
+            .plan-v3-grid::-webkit-scrollbar,
+            .current-offers-grid::-webkit-scrollbar {
+                height: 5px;
+            }
+
+            .plan-v3-grid::-webkit-scrollbar-track,
+            .current-offers-grid::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                margin: 0 24px;
+                border-radius: 10px;
+            }
+
+            .plan-v3-grid::-webkit-scrollbar-thumb,
+            .current-offers-grid::-webkit-scrollbar-thumb {
+                background: #e2001a;
+                border-radius: 10px;
+            }
         }
     </style>
 </head>
@@ -1505,87 +1536,48 @@
 
             <div class="plan-v3-grid wireless-grid">
                 <!-- Plan: Business Starter Pro -->
-                <div class="plan-v3-card featured">
+
+
+                <!-- Plan: Business On -->
+                <div class="plan-v3-card">
                     <div class="plan-v3-header">
                         <div class="plan-v3-badges">
-                            <span class="plan-v3-badge">60% Offer</span>
-                            <span class="plan-v3-badge">5G Router Included</span>
+                            <span class="plan-v3-badge">5G Internet + Business Presence</span>
                         </div>
-                        <h3 class="plan-v3-title">Business Starter Pro</h3>
+                        <h3 class="plan-v3-title">BUSINESS ON</h3>
                         <div class="plan-v3-pricing">
-                            <span class="plan-v3-price">AED 279/month</span>
+                            <span class="plan-v3-price">AED 395/month</span>
                             <span class="plan-v3-vat">+5% VAT</span>
                         </div>
                         <div class="plan-v3-commitment">
                             <span>12-month commitment</span>
                             <div class="plan-v3-toggle"></div>
                         </div>
-                        <div class="plan-v3-offers-box">
-                            <div class="plan-v3-offers-left">
-                                <span class="plan-v3-offers-icon">%</span>
-                                <span>Limited Time Offer</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Internet</span>
-                            <span class="plan-v3-service-value">1 Gbps</span>
+                            <span class="plan-v3-service-label">Wireless Internet</span>
+                            <span class="plan-v3-service-value">5G with Unlimited Data</span>
                             <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 80%;"></div>
+                                <div class="plan-v3-progress" style="width: 80%; background: #1a1a1a;"></div>
                             </div>
-                            <span class="plan-v3-promo-text">Unlimited Usage at Full Speed</span>
                         </div>
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Landline</span>
-                            <span class="plan-v3-service-value">Unlimited Calls</span>
-                            <span class="plan-v3-sub-label">250 National Mobile Minutes</span>
+                            <span class="plan-v3-service-label">Landline on Mobile</span>
+                            <span class="plan-v3-service-value">UAE Business Landline</span>
+                            <span class="plan-v3-sub-label">Use Anywhere in the world</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">Router</span>
+                            <span class="plan-v3-service-value">Business Grade Premium Wi-Fi</span>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-sub-label">Business Essentials</span>
                             <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="Microsoft 365" class="plan-v3-icon-img"
-                                    title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title=".ae Domain">
-                                <span class="plan-v3-more-count">+ eStore</span>
+                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Business Domain">
+                                <span class="plan-v3-more-count">+ eStore, 100 Flexi Mins, Free UAE Landline
+                                    Calls</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-
-                <!-- Plan: Business Starter -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-header">
-                        <div class="plan-v3-badges">
-                            <span class="plan-v3-badge">20% Offer</span>
-                        </div>
-                        <h3 class="plan-v3-title">Business Starter</h3>
-                        <div class="plan-v3-pricing">
-                            <span class="plan-v3-price">AED 249/month</span>
-                            <span class="plan-v3-vat">+5% VAT</span>
-                        </div>
-                        <div class="plan-v3-commitment">
-                            <span>12-month commitment</span>
-                            <div class="plan-v3-toggle"></div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Internet</span>
-                            <span class="plan-v3-service-value">High Speed 5G</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 50%; background: #1a1a1a;"></div>
-                            </div>
-                            <span class="plan-v3-promo-text">Unlimited Internet Usage</span>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Router</span>
-                            <span class="plan-v3-service-value">Advanced 5G Enabled</span>
-                            <span class="plan-v3-sub-label">Gigabit Ethernet Port</span>
                         </div>
                     </div>
                     <div class="plan-v3-footer">
@@ -1595,7 +1587,7 @@
                 </div>
             </div>
 
-            <div style="margin-bottom: 10px; margin-top: -20px;">
+            <div style="margin-bottom: 20px; margin-top: 60px;">
                 <button style="
                   background: linear-gradient(135deg, #e2001a, #9b0012);
                   color: white;
@@ -1606,265 +1598,59 @@
                   cursor: pointer;
                   font-weight: bold;
                 ">
-                    FIBER PLANS
+                    BUSINESS PRO PLANS
                 </button>
             </div>
-            <!-- Business Ultimate Section Title with Dotted SVG -->
-            <div class="section-title-ultimate"
-                style="display: flex; align-items: center; justify-content: center; margin: 40px 0 24px 0;">
+
+            <!-- Business Pro Section Title -->
+            <div class="section-title-pro"
+                style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 40px 0 24px 0; background: #000; padding: 20px; border-radius: 12px; max-width: 1400px; margin-left: auto; margin-right: auto;">
+                <h2
+                    style="color: #fff; font-size: 2.2rem; text-align: center; margin: 0; text-transform: uppercase; font-weight: 800;">
+                    ALL NEW BUSINESS BROADBAND CONNECTIONS</h2>
                 <div
-                    style="min-height: 48px; height: auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; justify-content: center;">
-                    <!-- Left Dots SVG -->
-                    <svg width="48" height="48" viewBox="0 0 48 48" style="flex-shrink: 0;"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle cx="4" cy="4" r="2" fill="#fff" />
-                            <circle cx="12" cy="4" r="2" fill="#fff" />
-                            <circle cx="20" cy="4" r="2" fill="#fff" />
-                            <circle cx="28" cy="4" r="2" fill="#fff" />
-                            <circle cx="36" cy="4" r="2" fill="#fff" />
-                            <circle cx="44" cy="4" r="2" fill="#fff" />
-                            <circle cx="4" cy="12" r="2" fill="#fff" />
-                            <circle cx="12" cy="12" r="2" fill="#fff" />
-                            <circle cx="20" cy="12" r="2" fill="#fff" />
-                            <circle cx="28" cy="12" r="2" fill="#fff" />
-                            <circle cx="36" cy="12" r="2" fill="#fff" />
-                            <circle cx="44" cy="12" r="2" fill="#fff" />
-                            <circle cx="4" cy="20" r="2" fill="#fff" />
-                            <circle cx="12" cy="20" r="2" fill="#fff" />
-                            <circle cx="20" cy="20" r="2" fill="#fff" />
-                            <circle cx="28" cy="20" r="2" fill="#fff" />
-                            <circle cx="36" cy="20" r="2" fill="#fff" />
-                            <circle cx="44" cy="20" r="2" fill="#fff" />
-                            <circle cx="4" cy="28" r="2" fill="#fff" />
-                            <circle cx="12" cy="28" r="2" fill="#fff" />
-                            <circle cx="20" cy="28" r="2" fill="#fff" />
-                            <circle cx="28" cy="28" r="2" fill="#fff" />
-                            <circle cx="36" cy="28" r="2" fill="#fff" />
-                            <circle cx="44" cy="28" r="2" fill="#fff" />
-                            <circle cx="4" cy="36" r="2" fill="#fff" />
-                            <circle cx="12" cy="36" r="2" fill="#fff" />
-                            <circle cx="20" cy="36" r="2" fill="#fff" />
-                            <circle cx="28" cy="36" r="2" fill="#fff" />
-                            <circle cx="36" cy="36" r="2" fill="#fff" />
-                            <circle cx="44" cy="36" r="2" fill="#fff" />
-                            <circle cx="4" cy="44" r="2" fill="#fff" />
-                            <circle cx="12" cy="44" r="2" fill="#fff" />
-                            <circle cx="20" cy="44" r="2" fill="#fff" />
-                            <circle cx="28" cy="44" r="2" fill="#fff" />
-                            <circle cx="36" cy="44" r="2" fill="#fff" />
-                            <circle cx="44" cy="44" r="2" fill="#fff" />
-                        </g>
-                    </svg>
-                    <div class="gradient-bar"
-                        style="background: linear-gradient(135deg, #e2001a, #9b0012); border-radius: 8px; padding: 8px 32px; display: flex; align-items: center; justify-content: center; min-height: 48px; width: auto;">
-                        <span
-                            style="color: #fff; font-size: 2.4rem; font-weight: bold; letter-spacing: 2px; text-align: center; width: 100%; line-height: 1.2;">BUSINESS
-                            ULTIMATE</span>
-                    </div>
-                    <!-- Right Dots SVG -->
-                    <svg width="48" height="48" viewBox="0 0 48 48" style="flex-shrink: 0;"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle cx="4" cy="4" r="2" fill="#fff" />
-                            <circle cx="12" cy="4" r="2" fill="#fff" />
-                            <circle cx="20" cy="4" r="2" fill="#fff" />
-                            <circle cx="28" cy="4" r="2" fill="#fff" />
-                            <circle cx="36" cy="4" r="2" fill="#fff" />
-                            <circle cx="44" cy="4" r="2" fill="#fff" />
-                            <circle cx="4" cy="12" r="2" fill="#fff" />
-                            <circle cx="12" cy="12" r="2" fill="#fff" />
-                            <circle cx="20" cy="12" r="2" fill="#fff" />
-                            <circle cx="28" cy="12" r="2" fill="#fff" />
-                            <circle cx="36" cy="12" r="2" fill="#fff" />
-                            <circle cx="44" cy="12" r="2" fill="#fff" />
-                            <circle cx="4" cy="20" r="2" fill="#fff" />
-                            <circle cx="12" cy="20" r="2" fill="#fff" />
-                            <circle cx="20" cy="20" r="2" fill="#fff" />
-                            <circle cx="28" cy="20" r="2" fill="#fff" />
-                            <circle cx="36" cy="20" r="2" fill="#fff" />
-                            <circle cx="44" cy="20" r="2" fill="#fff" />
-                            <circle cx="4" cy="28" r="2" fill="#fff" />
-                            <circle cx="12" cy="28" r="2" fill="#fff" />
-                            <circle cx="20" cy="28" r="2" fill="#fff" />
-                            <circle cx="28" cy="28" r="2" fill="#fff" />
-                            <circle cx="36" cy="28" r="2" fill="#fff" />
-                            <circle cx="44" cy="28" r="2" fill="#fff" />
-                            <circle cx="4" cy="36" r="2" fill="#fff" />
-                            <circle cx="12" cy="36" r="2" fill="#fff" />
-                            <circle cx="20" cy="36" r="2" fill="#fff" />
-                            <circle cx="28" cy="36" r="2" fill="#fff" />
-                            <circle cx="36" cy="36" r="2" fill="#fff" />
-                            <circle cx="44" cy="36" r="2" fill="#fff" />
-                            <circle cx="4" cy="44" r="2" fill="#fff" />
-                            <circle cx="12" cy="44" r="2" fill="#fff" />
-                            <circle cx="20" cy="44" r="2" fill="#fff" />
-                            <circle cx="28" cy="44" r="2" fill="#fff" />
-                            <circle cx="36" cy="44" r="2" fill="#fff" />
-                            <circle cx="44" cy="44" r="2" fill="#fff" />
-                        </g>
-                    </svg>
-                </div>
+                    style="font-size: 2.6rem; font-weight: 900; background: linear-gradient(90deg, #fff, #999); -webkit-background-clip: text; background-clip: text; color: transparent; margin-top: 10px; text-transform: uppercase;">
+                    BUSINESS PRO WITH GREAT OFFERS NOW</div>
             </div>
 
-
-
-
-
-            <!-- Second row: 2 cards centered -->
             <div class="plan-v3-grid">
-                <!-- 200 Mbps -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                        <span class="plan-v3-badge featured">FREE Handset Voucher</span>
-                    </div>
-                    <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Ultimate 200Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 854/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 949</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">200 Mbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 20%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Premium Extras</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Free Domain">
-                                <span class="plan-v3-more-count">+ AV, eStore</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-
-                <!-- 400 Mbps -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                        <span class="plan-v3-badge featured">FREE Access Point</span>
-                    </div>
-                    <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Ultimate 400Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1169/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 1299</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">400 Mbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 40%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Premium Extras</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Free Domain">
-                                <span class="plan-v3-more-count">+ AV, eStore</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-
-                <!-- 600 Mbps -->
+                <!-- Plan 1: Business Pro 100 Mbps -->
                 <div class="plan-v3-card featured">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                        <span class="plan-v3-badge featured">Best Value</span>
-                    </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Ultimate 600Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1529/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 1699</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge featured"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                            <span class="plan-v3-badge featured"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">FREE
+                                SMARTPHONE</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 100 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 995/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">600 Mbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">100Mbps/10Mbps</span>
                             <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 60%;"></div>
+                                <div class="plan-v3-progress" style="width: 15%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">1 Comm Line</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
                         </div>
                         <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Premium Extras</span>
+                            <span class="plan-v3-sub-label">Business Essentials</span>
                             <div class="plan-v3-icons-flex">
                                 <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Free Domain">
                                 <span class="plan-v3-more-count">+ AV, eStore</span>
                             </div>
                         </div>
@@ -1875,50 +1661,41 @@
                     </div>
                 </div>
 
-                <!-- 800 Mbps -->
+                <!-- Plan 2: Business Pro 200 Mbps -->
                 <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Ultimate 800Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 2299/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span style="visibility: hidden;">placeholder</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 200 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 1095/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Extreme Speed</span>
-                            <span class="plan-v3-service-value">800 Mbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">200Mbps/20Mbps</span>
                             <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 80%;"></div>
+                                <div class="plan-v3-progress" style="width: 25%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">1 Comm Line</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
                         </div>
                         <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Premium Extras</span>
+                            <span class="plan-v3-sub-label">Business Essentials</span>
                             <div class="plan-v3-icons-flex">
                                 <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Free Domain">
-                                <span class="plan-v3-more-count">+ AV, eStore</span>
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
                             </div>
                         </div>
                     </div>
@@ -1927,208 +1704,42 @@
                         <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
                     </div>
                 </div>
-
-                <!-- 1 Gbps -->
+                <!-- Plan 3: Business Pro 300 Mbps -->
                 <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Ultimate 1Gbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 2834/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 3149</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 300 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 1245/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Maximum Speed</span>
-                            <span class="plan-v3-service-value">1 Gbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Premium Extras</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
-                                <img src="img/img44.png" alt="Domain" class="plan-v3-icon-img" title="Free Domain">
-                                <span class="plan-v3-more-count">+ AV, eStore</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- business essential -->
-
-            <!-- Business Essential Section Title with Dotted SVG -->
-            <div style="margin-bottom: 10px; margin-top: 20px;">
-                <button style="
-                  background: var(--primary);
-                  color: white;
-                  padding: 12px 24px;
-                  border: none;
-                  border-radius: 12px;
-                  font-size: 16px;
-                  cursor: pointer;
-                  font-weight: bold;
-                ">
-                    BUSINESS ESSENTIAL
-                </button>
-            </div>
-
-            <div class="plan-v3-grid">
-                <!-- 100 Mbps -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
-                    <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 100Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 599/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 749</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">100 Mbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 10%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-
-                <!-- 200 Mbps -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
-                    <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 200Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 749/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 949</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">200 Mbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 20%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
-                    </div>
-                </div>
-
-                <!-- 350 Mbps -->
-                <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
-                    <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 350Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 899/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 1149</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">350 Mbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">300Mbps/30Mbps</span>
                             <div class="plan-v3-progress-bar">
                                 <div class="plan-v3-progress" style="width: 35%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">2 Comm Lines</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-sub-label">Business Essentials</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
+                            </div>
                         </div>
                     </div>
                     <div class="plan-v3-footer">
@@ -2137,43 +1748,42 @@
                     </div>
                 </div>
 
-                <!-- 500 Mbps -->
-                <div class="plan-v3-card featured">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
+                <!-- Plan 4: Business Pro 400 Mbps -->
+                <div class="plan-v3-card">
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 500Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1199/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 1449</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 400 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 1475/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">500 Mbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">400Mbps/40Mbps</span>
                             <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 50%;"></div>
+                                <div class="plan-v3-progress" style="width: 45%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">4 Comm Lines</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-sub-label">Business Essentials</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
+                            </div>
                         </div>
                     </div>
                     <div class="plan-v3-footer">
@@ -2182,43 +1792,86 @@
                     </div>
                 </div>
 
-                <!-- 750 Mbps -->
+                <!-- Plan 5: Business Pro 550 Mbps -->
                 <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 750Mbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1549/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 1949</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 550 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 1875/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">High-Speed Fiber</span>
-                            <span class="plan-v3-service-value">750 Mbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">550Mbps/55Mbps</span>
+                            <div class="plan-v3-progress-bar">
+                                <div class="plan-v3-progress" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">Communication</span>
+                            <span class="plan-v3-service-value">6 Comm Lines</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-sub-label">Business Essentials</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-footer">
+                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
+                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
+                    </div>
+                </div>
+
+                <!-- Plan 6: Business Pro 750 Mbps -->
+                <div class="plan-v3-card">
+                    <div class="plan-v3-header">
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 750 Mbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 2475/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-body">
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">750Mbps/75Mbps</span>
                             <div class="plan-v3-progress-bar">
                                 <div class="plan-v3-progress" style="width: 75%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">8 Comm Lines</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-sub-label">Business Essentials</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
+                            </div>
                         </div>
                     </div>
                     <div class="plan-v3-footer">
@@ -2227,51 +1880,59 @@
                     </div>
                 </div>
 
-                <!-- 1 Gbps -->
+                <!-- Plan 7: Business Pro 1 Gbps -->
                 <div class="plan-v3-card">
-                    <div class="plan-v3-badges">
-                        <span class="plan-v3-badge">20% Offer</span>
-                    </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Business Essential 1Gbps</h3>
-                        <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1899/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
-                            </div>
-                            <div class="plan-v3-was-price-row">
-                                <span class="plan-v3-was-number">Was AED 2399</span>
-                            </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle"></div>
-                            </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
-                            </div>
+                        <div class="plan-v3-badges">
+                            <span class="plan-v3-badge featured"
+                                style="background: white; color: #e11d2d; border: 1px solid #e11d2d;">15-25% OFF</span>
+                        </div>
+                        <h3 class="plan-v3-title">Business Pro 1 Gbps</h3>
+                        <div class="plan-v3-pricing">
+                            <span class="plan-v3-price">AED 3375/month</span>
+                            <span class="plan-v3-vat">+5% VAT</span>
+                        </div>
+                        <div class="plan-v3-commitment">
+                            <span>12-month commitment</span>
+                            <div class="plan-v3-toggle"></div>
                         </div>
                     </div>
                     <div class="plan-v3-body">
                         <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Maximum Speed</span>
-                            <span class="plan-v3-service-value">1 Gbps</span>
+                            <span class="plan-v3-service-label">Upload/Download Speed</span>
+                            <span class="plan-v3-service-value" style="color: var(--er1);">1000Mbps/100Mbps</span>
                             <div class="plan-v3-progress-bar">
                                 <div class="plan-v3-progress" style="width: 100%;"></div>
                             </div>
                         </div>
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">Communication</span>
-                            <span class="plan-v3-service-value">Unlimited Landline</span>
-                            <span class="plan-v3-sub-label">100 Mobile + 100 Int'l Mins</span>
+                            <span class="plan-v3-service-value">10 Comm Lines</span>
+                            <span class="plan-v3-sub-label">Main Number + Desk Phone</span>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-sub-label">Business Essentials</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/img33.png" alt="M365" class="plan-v3-icon-img" title="Microsoft 365">
+                                <span class="plan-v3-more-count">+ AV, eStore, Firewall</span>
+                            </div>
                         </div>
                     </div>
                     <div class="plan-v3-footer">
                         <a href="/contact.html" class="plan-v3-details-link">More Details</a>
                         <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
                     </div>
+                    <!-- Horizontal Scroll Spacer for better last card visibility -->
+                    <div class="plan-v3-scroll-spacer"></div>
                 </div>
-            </div>
+        </section>
+
+
+
+
+
+
+
 
 
     </main>

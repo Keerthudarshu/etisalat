@@ -699,6 +699,24 @@
         /* Internet plans section */
         .dark-plans-banner {
             background: linear-gradient(135deg, var(--er1) 0%, var(--er2) 100%) !important;
+            padding: 40px 20px !important;
+            text-align: center !important;
+            color: #fff !important;
+        }
+
+        .dpb-title {
+            color: #fff !important;
+            font-size: 32px !important;
+            font-weight: 800 !important;
+            margin-bottom: 12px !important;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+        }
+
+        .dpb-subtitle {
+            color: rgba(255, 255, 255, 0.95) !important;
+            font-size: 16px !important;
+            max-width: 800px !important;
+            margin: 0 auto !important;
         }
 
         .internet-plans h2 {
@@ -912,10 +930,11 @@
             }
         }
 
-        
-        
+
+
         /* ==== CONSOLIDATED MOBILE RESPONSIVENESS (Premium Carousel & Offers) ==== */
         @media (max-width: 768px) {
+
             /* 1. Corporate Content Stacking */
             .corporate-content {
                 display: flex !important;
@@ -925,7 +944,25 @@
                 box-sizing: border-box !important;
                 width: 100% !important;
             }
-            .features-column, .contact-form, .promo-block {
+
+            .features-column {
+                width: 100% !important;
+                box-sizing: border-box !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .contact-form {
+                width: 100% !important;
+                box-sizing: border-box !important;
+                margin: 0 !important;
+                padding: 30px 20px !important;
+                border: 1px solid rgba(226, 0, 26, 0.15) !important;
+                border-top: 4px solid var(--er1) !important;
+                border-radius: 12px !important;
+            }
+
+            .promo-block {
                 width: 100% !important;
                 box-sizing: border-box !important;
                 margin: 0 !important;
@@ -938,9 +975,9 @@
                 flex-direction: row !important;
                 flex-wrap: nowrap !important;
                 overflow-x: auto !important;
-                padding: 15px 24px 35px !important; 
+                padding: 15px 24px 35px !important;
                 scroll-snap-type: x mandatory !important;
-                scroll-padding: 0 24px !important; 
+                scroll-padding: 0 24px !important;
                 -webkit-overflow-scrolling: touch;
                 justify-content: flex-start !important;
                 gap: 16px !important;
@@ -948,16 +985,17 @@
                 width: 100% !important;
                 box-sizing: border-box !important;
             }
-            .plan-v3-grid > * {
-                flex: 0 0 85% !important; 
+
+            .plan-v3-grid>* {
+                flex: 0 0 85% !important;
                 max-width: 85% !important;
-                scroll-snap-align: start !important; 
+                scroll-snap-align: start !important;
                 margin-bottom: 0 !important;
-                border: 2px solid #e2001a !important; 
+                border: 2px solid #e2001a !important;
                 box-sizing: border-box !important;
                 background: #fff !important;
                 border-radius: 20px !important;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.08) !important;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
             }
 
             /* 3. Current Offers Slider */
@@ -976,6 +1014,7 @@
                 width: 100% !important;
                 box-sizing: border-box !important;
             }
+
             .current-offer-card {
                 flex: 0 0 85% !important;
                 max-width: 85% !important;
@@ -986,14 +1025,44 @@
             }
 
             /* Mobile-specific internal styling */
-            .plan-v3-grid .plan-v3-title { font-size: 20px !important; line-height: 1.2 !important; margin-bottom: 12px !important; }
-            .plan-v3-grid .plan-v3-price { font-size: 22px !important; }
-            .plan-v3-grid .plan-v3-badge { font-size: 11px !important; padding: 2px 8px !important; }
-            
+            .plan-v3-grid .plan-v3-title {
+                font-size: 20px !important;
+                line-height: 1.2 !important;
+                margin-bottom: 12px !important;
+            }
+
+            .plan-v3-grid .plan-v3-price {
+                font-size: 22px !important;
+            }
+
+            .plan-v3-grid .plan-v3-badge {
+                font-size: 9px !important;
+                padding: 4px 10px !important;
+                border-radius: 40px !important;
+                text-transform: uppercase !important;
+                letter-spacing: 0.02em !important;
+                font-weight: 800 !important;
+            }
+
+
             /* Branded mobile scrollbar */
-            .plan-v3-grid::-webkit-scrollbar, .current-offers-grid::-webkit-scrollbar { height: 5px; }
-            .plan-v3-grid::-webkit-scrollbar-track, .current-offers-grid::-webkit-scrollbar-track { background: #f1f1f1; margin: 0 24px; border-radius: 10px; }
-            .plan-v3-grid::-webkit-scrollbar-thumb, .current-offers-grid::-webkit-scrollbar-thumb { background: #e2001a; border-radius: 10px; }
+            .plan-v3-grid::-webkit-scrollbar,
+            .current-offers-grid::-webkit-scrollbar {
+                height: 5px;
+            }
+
+            .plan-v3-grid::-webkit-scrollbar-track,
+            .current-offers-grid::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                margin: 0 24px;
+                border-radius: 10px;
+            }
+
+            .plan-v3-grid::-webkit-scrollbar-thumb,
+            .current-offers-grid::-webkit-scrollbar-thumb {
+                background: #e2001a;
+                border-radius: 10px;
+            }
         }
     </style>
 </head>
@@ -1397,6 +1466,106 @@
             </div>
 
             <div class="plan-v3-grid wireless-grid">
+                <!-- Plan 1: Home Wireless Advance (Featured) -->
+                <div class="plan-v3-card featured">
+                    <div class="plan-v3-badges">
+                        <span class="plan-v3-badge featured">Online Offers</span>
+                        <span class="plan-v3-badge featured">5G Latest router offered</span>
+                    </div>
+                    <div class="plan-v3-header">
+                        <h3 class="plan-v3-title">Home Wireless Advance</h3>
+                        <div class="plan-v3-price-box">
+                            <div class="plan-v3-pricing">
+                                <span class="plan-v3-price">AED 159/month</span>
+                                <span class="plan-v3-vat">+5% VAT</span>
+                            </div>
+                            <div class="plan-v3-was-price-row">
+                                <span class="plan-v3-was-number">was AED 229</span>
+                                <span class="plan-v3-discount-badge">30% off for 3 months ⓘ</span>
+                            </div>
+                            <hr class="plan-price-divider">
+                            <div class="plan-v3-commitment">
+                                <span>12-month commitment</span>
+                                <div class="plan-v3-toggle"></div>
+                            </div>
+                            <div class="plan-v3-offers-box">
+                                <div class="plan-v3-offers-left">
+                                    <span class="plan-v3-offers-icon">%</span>
+                                    <span>2 Offers available</span>
+                                </div>
+                                <span>&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-body">
+                        <div class="plan-v3-feature-list"
+                            style="display: flex; flex-direction: column; gap: 12px; padding: 10px 0;">
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: #1a1a1a;">
+                                <span style="color: #e11d2d;">✓</span>
+                                <span>159 AED for first 3 months</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: #1a1a1a;">
+                                <span style="color: #e11d2d;">✓</span>
+                                <span>Enjoy highspeed internet</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: #1a1a1a;">
+                                <span style="color: #e11d2d;">✓</span>
+                                <span>5G Latest router</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: #1a1a1a;">
+                                <span style="color: #e11d2d;">✓</span>
+                                <span>Just 229 AED after 3 months</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; font-size: 14px; font-weight: 500; color: #1a1a1a;">
+                                <span style="color: #e11d2d;">✓</span>
+                                <span>Unlimited internet</span>
+                            </div>
+                        </div>
+
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">Internet</span>
+                            <span class="plan-v3-service-value">1 Gbps</span>
+                            <div class="plan-v3-progress-bar">
+                                <div class="plan-v3-progress" style="width: 30%;"></div>
+                            </div>
+                        </div>
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">TV</span>
+                            <span class="plan-v3-service-value">200+ Basic Channels</span>
+                            <span class="plan-v3-sub-label">Subscription and more</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/icons/amazon-prime-1.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/app-icon-96x96.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/anghami-72px_tcm314-310885.png" alt="Icon" class="plan-v3-icon-img">
+                                <span class="plan-v3-more-count">+ 1 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-footer">
+                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
+                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="internet-plans" id="wifi-plans">
+            <div class="dark-plans-banner">
+                <div class="dpb-content">
+                    <h2 class="dpb-title">Instant Home Fiber, Unlimited data!</h2>
+                    <p class="dpb-subtitle">Get unlimited data & an optional 5G Plug-n-Play router at no extra charge
+                        with Home Fiber Advance only for AED 229!</p>
+                </div>
+            </div>
+
+
+            <div class="plan-v3-grid wireless-grid">
                 <!-- Plan 1: Neo (Featured) -->
                 <div class="plan-v3-card featured">
                     <div class="plan-v3-badges">
@@ -1404,7 +1573,7 @@
                         <span class="plan-v3-badge featured">WiFi 7 router offered</span>
                     </div>
                     <div class="plan-v3-header">
-                        <h3 class="plan-v3-title">Neo</h3>
+                        <h3 class="plan-v3-title"> Elife Neo</h3>
                         <div class="plan-v3-price-box">
                             <div class="plan-v3-pricing">
                                 <span class="plan-v3-price">AED 229/month</span>
@@ -1412,10 +1581,15 @@
                             </div>
                             <div class="plan-v3-was-price-row">
                                 <span class="plan-v3-was-number">was AED399</span>
-                                <span class="plan-v3-discount-badge">40% off for 2 months ⓘ</span>
+                                <span class="plan-v3-discount-badge"
+                                    style="background: #e11d2d; font-weight: 800; padding: 4px 10px;">Special discount
+                                    on Two months ⓘ</span>
                             </div>
                             <hr class="plan-price-divider">
                             <div class="plan-v3-commitment">
+                                <span
+                                    style="display: block; color: #e11d2d; font-weight: 700; margin-bottom: 6px; font-size: 12px;">1.
+                                    promo discount on two bills second & Third.</span>
                                 <span>12-month commitment</span>
                                 <div class="plan-v3-toggle"></div>
                             </div>
@@ -1441,8 +1615,9 @@
                             <span class="plan-v3-service-value">200+ Basic Channels</span>
                             <span class="plan-v3-sub-label">Subscription and more</span>
                             <div class="plan-v3-icons-flex">
-                                <img src="img/img12.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img22.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/amazon-prime-1.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/app-icon-96x96.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/anghami-72px_tcm314-310885.png" alt="Icon" class="plan-v3-icon-img">
                                 <span class="plan-v3-more-count">+ 1 more</span>
                             </div>
                         </div>
@@ -1460,6 +1635,98 @@
                         <span class="plan-v3-badge">WiFi 7 router offered</span>
                     </div>
                     <div class="plan-v3-header">
+                        <h3 class="plan-v3-title">Neo</h3>
+                        <div class="plan-v3-price-box">
+                            <div class="plan-v3-pricing">
+                                <span class="plan-v3-price">AED 299/month</span>
+                                <span class="plan-v3-vat">+5% VAT</span>
+                            </div>
+                            <div class="plan-v3-was-price-row">
+                                <span class="plan-v3-was-number" style="visibility: hidden;">was AED</span>
+                            </div>
+                            <hr class="plan-price-divider">
+                            <div class="plan-v3-commitment">
+                                <span>12-Months Free Rental</span>
+                                <div class="plan-v3-toggle"></div>
+                            </div>
+                            <div class="plan-v3-offers-box">
+                                <div class="plan-v3-offers-left">
+                                    <span class="plan-v3-offers-icon">%</span>
+                                    <span>3 Offers available</span>
+                                </div>
+                                <span>&gt;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-body">
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">Internet</span>
+                            <span class="plan-v3-service-value">12 Mbps</span>
+                            <div class="plan-v3-progress-bar">
+                                <div class="plan-v3-progress red" style="width: 50%;"></div>
+                            </div>
+                            <span class="plan-v3-promo-text">Free Limited time Promo: 1Gbps</span>
+                        </div>
+                        <div class="plan-v3-feature-list" style="padding: 15px 0;">
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Free Landline phone</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Fee Advance Router</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Unlimited internet data</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>unlimited landline calls</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>No Advance, No Deposite</span>
+                            </div>
+                        </div>
+
+
+                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-label">TV</span>
+                            <span class="plan-v3-service-value">180+ Basic Channels</span>
+                            <span class="plan-v3-sub-label">Subscription and more</span>
+                            <div class="plan-v3-icons-flex">
+                                <img src="img/icons/amazon-prime-1.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/app-icon-96x96.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/anghami-72px_tcm314-310885.png" alt="Icon" class="plan-v3-icon-img">
+                                <span class="plan-v3-more-count">+ 2 more</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-v3-footer">
+                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
+                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
+                    </div>
+                </div>
+
+                <div class="plan-v3-card">
+                    <div class="plan-v3-badges">
+                        <span class="plan-v3-badge">Online offers</span>
+                        <span class="plan-v3-badge">WiFi 7 router offered</span>
+                        <span class="plan-v3-badge featured" style="background: #e11d2d; color: #fff;">Free
+                            installation</span>
+                    </div>
+                    <div class="plan-v3-header">
                         <h3 class="plan-v3-title">Ultra Starter</h3>
                         <div class="plan-v3-price-box">
                             <div class="plan-v3-pricing">
@@ -1468,6 +1735,9 @@
                             </div>
                             <div class="plan-v3-was-price-row">
                                 <span class="plan-v3-was-number" style="visibility: hidden;">was AED</span>
+                                <span class="plan-v3-discount-badge"
+                                    style="background: #e11d2d; font-weight: 800; padding: 4px 10px;">30% discount
+                                    ⓘ</span>
                             </div>
                             <hr class="plan-price-divider">
                             <div class="plan-v3-commitment">
@@ -1492,13 +1762,50 @@
                             </div>
                             <span class="plan-v3-promo-text">Free Limited time Promo: 1Gbps</span>
                         </div>
+                        <div class="plan-v3-feature-list" style="padding: 15px 0;">
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Free Landline phone</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Fee Advance Router</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Free 4K TV Setup Box</span>
+                            </div>
+
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Unlimited internet data</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>unlimited landline calls</span>
+                            </div>
+
+                        </div>
+
+
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">TV</span>
                             <span class="plan-v3-service-value">180+ Basic Channels</span>
                             <span class="plan-v3-sub-label">Subscription and more</span>
                             <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img44.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/amazon-prime-1.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/app-icon-96x96.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/anghami-72px_tcm314-310885.png" alt="Icon" class="plan-v3-icon-img">
                                 <span class="plan-v3-more-count">+ 2 more</span>
                             </div>
                         </div>
@@ -1519,7 +1826,7 @@
                         <h3 class="plan-v3-title">Neo Fusion</h3>
                         <div class="plan-v3-price-box">
                             <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 799/month</span>
+                                <span class="plan-v3-price">AED 399/month</span>
                                 <span class="plan-v3-vat">+5% VAT</span>
                             </div>
                             <div class="plan-v3-was-price-row">
@@ -1544,23 +1851,46 @@
                             <span class="plan-v3-service-label">Internet</span>
                             <span class="plan-v3-service-value">1 Gbps</span>
                             <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 70%;"></div>
+                                <div class="plan-v3-progress red" style="width: 50%;"></div>
+                            </div>
+                            <span class="plan-v3-promo-text">Free Limited time Promo: 1Gbps</span>
+                        </div>
+                        <div class="plan-v3-feature-list" style="padding: 15px 0;">
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Free Amazon Prime</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Basic 200+ Channels</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>Unlimited internet data</span>
+                            </div>
+                            <div class="plan-v3-feature-item"
+                                style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #333; font-weight: 500;">
+                                <span
+                                    style="background: #e11d2d; color: #fff; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; flex-shrink: 0;">✓</span>
+                                <span>unlimited landline calls</span>
                             </div>
                         </div>
+
+
                         <div class="plan-v3-service">
                             <span class="plan-v3-service-label">TV</span>
-                            <span class="plan-v3-service-value">500+ Sports & Premium Channels</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img12.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img22.png" alt="Icon" class="plan-v3-icon-img">
-                                <span class="plan-v3-more-count">+ 2 more</span>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
+                            <span class="plan-v3-service-value">180+ Basic Channels</span>
                             <span class="plan-v3-sub-label">Subscription and more</span>
                             <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img44.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/amazon-prime-1.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/app-icon-96x96.png" alt="Icon" class="plan-v3-icon-img">
+                                <img src="img/icons/anghami-72px_tcm314-310885.png" alt="Icon" class="plan-v3-icon-img">
                                 <span class="plan-v3-more-count">+ 2 more</span>
                             </div>
                         </div>
@@ -1571,64 +1901,113 @@
                     </div>
                 </div>
 
-                <!-- Plan 4: Neo Fusion 5G -->
-                <div class="plan-v3-card">
-                    <!-- Deliberately omitting badges to match reference -->
-                    <div class="plan-v3-header" style="border-radius: 15px 15px 0 0; padding-top: 36px;">
-                        <h3 class="plan-v3-title">Neo Fusion 5G</h3>
+
+        </section>
+
+        <!-- eLife Family Promo Section -->
+        <section class="internet-plans elife-promo-section" id="elife-family-promo" style="padding-top: 60px;">
+            <div class="dark-plans-banner"
+                style="background: linear-gradient(135deg, #e11d2d 0%, #a31621 100%); margin-bottom: 60px;">
+                <div class="dpb-content">
+                    <h2 class="dpb-title" style="letter-spacing: 2px; color: #fff;">LIMITED TIME SPECIAL PROMO</h2>
+                    <p class="dpb-subtitle" style="color: #fff; opacity: 0.9;">Experience the ultimate home
+                        entertainment with eLife Family</p>
+                </div>
+            </div>
+
+            <div class="plan-grid-container" style="max-width: 1200px; margin: -40px auto 100px; padding: 0 20px;">
+                <div class="plan-v3-card featured"
+                    style="max-width: 400px; margin: 0 auto; border: 2px solid #e11d2d; box-shadow: 0 20px 40px rgba(225, 29, 45, 0.15); background: #fff; border-radius: 20px; overflow: hidden; position: relative;">
+                    <div class="plan-v3-badges"
+                        style="position: absolute; top: 15px; left: 15px; display: flex; gap: 8px;">
+                        <span class="plan-v3-badge featured"
+                            style="background: #e11d2d; color: #fff; font-weight: 700; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Special
+                            Promo</span>
+                        <span class="plan-v3-badge featured"
+                            style="background: #333; color: #fff; font-weight: 700; padding: 5px 12px; border-radius: 20px; font-size: 11px;">Lifetime
+                            Discount</span>
+                    </div>
+                    <div class="plan-v3-header" style="text-align: center; padding: 45px 20px 15px;">
+                        <h3 class="plan-v3-title"
+                            style="font-size: 2.2rem; color: #e11d2d; margin-bottom: 10px; font-weight: 900; letter-spacing: -1px;">
+                            eLife Family</h3>
                         <div class="plan-v3-price-box">
-                            <div class="plan-v3-pricing">
-                                <span class="plan-v3-price">AED 1,799/month</span>
-                                <span class="plan-v3-vat">+5% VAT</span>
+                            <div class="plan-v3-was-price-row"
+                                style="display: flex; justify-content: center; align-items: center; margin-bottom: 5px; gap: 10px;">
+                                <span class="plan-v3-was-number"
+                                    style="text-decoration: line-through; color: #888; font-size: 1.1rem; font-weight: 500;">AED
+                                    359</span>
+                                <span style="color: #e11d2d; font-weight: 700; font-size: 0.9rem;">MONTHLY RENTAL</span>
                             </div>
-                            <div class="plan-v3-was-price-row">
-                                <span style="visibility: hidden;">placeholder</span>
+                            <div class="plan-v3-pricing"
+                                style="display: flex; justify-content: center; align-items: baseline; gap: 8px; margin-bottom: 10px;">
+                                <span class="plan-v3-price"
+                                    style="font-size: 3.5rem; font-weight: 900; color: #1a1a1a; line-height: 1;">250</span>
+                                <div style="display: flex; flex-direction: column; align-items: start;">
+                                    <span
+                                        style="font-size: 1.2rem; color: #e11d2d; font-weight: 800; line-height: 1;">AED*</span>
+                                    <span style="font-size: 0.8rem; color: #666; font-weight: 500;">+5% VAT</span>
+                                </div>
                             </div>
-                            <hr class="plan-price-divider">
-                            <div class="plan-v3-commitment">
-                                <span>24-month commitment</span>
-                                <div class="plan-v3-toggle off"></div>
+                            <hr class="plan-price-divider"
+                                style="border: 0; border-top: 1px dashed #ddd; margin: 15px 0;">
+                        </div>
+                    </div>
+                    <div class="plan-v3-body" style="padding: 0 30px 20px;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                            <div
+                                style="background: #f8f8f8; padding: 15px 10px; border-radius: 15px; border: 1px solid #eee; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                <div style="font-size: 1.8rem; font-weight: 900; color: #1a1a1a; line-height: 1;">100
+                                </div>
+                                <div
+                                    style="font-size: 0.8rem; color: #e11d2d; font-weight: 700; margin-top: 5px; text-transform: uppercase;">
+                                    Mbps Speed*</div>
                             </div>
-                            <div class="plan-v3-offers-box empty">
-                                <span>No special offers available</span>
+                            <div
+                                style="background: #f8f8f8; padding: 15px 10px; border-radius: 15px; border: 1px solid #eee; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                <div style="font-size: 1.8rem; font-weight: 900; color: #1a1a1a; line-height: 1;">150+
+                                </div>
+                                <div
+                                    style="font-size: 0.8rem; color: #e11d2d; font-weight: 700; margin-top: 5px; text-transform: uppercase;">
+                                    Premium Channels</div>
+                            </div>
+                        </div>
+
+                        <div class="plan-v3-feature-list" style="display: flex; flex-direction: column; gap: 15px;">
+                            <div class="plan-v3-feature-item" style="display: flex; align-items: center; gap: 12px;">
+                                <span
+                                    style="background: #fdf2f2; color: #e11d2d; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; border: 1px solid #fee2e2;">★</span>
+                                <span style="font-size: 1rem; font-weight: 700; color: #1a1a1a;">*30% Discount for
+                                    Lifetime*</span>
+                            </div>
+                            <div class="plan-v3-feature-item" style="display: flex; align-items: center; gap: 12px;">
+                                <span
+                                    style="background: #fdf2f2; color: #e11d2d; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; border: 1px solid #fee2e2;">✓</span>
+                                <span style="font-size: 1rem; font-weight: 700; color: #1a1a1a;">TV by e& (Unlimited
+                                    Fun)</span>
+                            </div>
+                            <div class="plan-v3-feature-item" style="display: flex; align-items: center; gap: 12px;">
+                                <span
+                                    style="background: #fdf2f2; color: #e11d2d; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; border: 1px solid #fee2e2;">✓</span>
+                                <span style="font-size: 1rem; font-weight: 700; color: #1a1a1a;">Free Installation &
+                                    Router</span>
                             </div>
                         </div>
                     </div>
-                    <div class="plan-v3-body">
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">Internet</span>
-                            <span class="plan-v3-service-value">5 Gbps</span>
-                            <div class="plan-v3-progress-bar">
-                                <div class="plan-v3-progress" style="width: 100%;"></div>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-service-label">TV</span>
-                            <span class="plan-v3-service-value">300+ Premium Channels</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img12.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img22.png" alt="Icon" class="plan-v3-icon-img">
-                                <span class="plan-v3-more-count">+ 2 more</span>
-                            </div>
-                        </div>
-                        <div class="plan-v3-service">
-                            <span class="plan-v3-sub-label">Subscription and more</span>
-                            <div class="plan-v3-icons-flex">
-                                <img src="img/img33.png" alt="Icon" class="plan-v3-icon-img">
-                                <img src="img/img44.png" alt="Icon" class="plan-v3-icon-img">
-                                <span class="plan-v3-more-count">+ 4 more</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="plan-v3-footer">
-                        <a href="/contact.html" class="plan-v3-details-link">More Details</a>
-                        <a href="/contact.html" class="plan-v3-select-btn">Select plan</a>
+                    <div class="plan-v3-footer" style="padding: 0 30px 40px;">
+                        <a href="/contact.html" class="plan-v3-select-btn"
+                            style="display: block; width: 100%; text-align: center; padding: 18px; font-size: 1.2rem; border-radius: 12px; font-weight: 800; background: #e11d2d; color: #fff; text-decoration: none; box-shadow: 0 10px 20px rgba(225, 29, 45, 0.2); transition: all 0.3s ease;">SELECT
+                            PLAN</a>
+                        <p
+                            style="text-align: center; font-size: 0.8rem; color: #999; margin-top: 20px; line-height: 1.4;">
+                            Terms and conditions apply. Regular eLife and Etisalat by e& T&Cs apply. This is a limited
+                            time offer.</p>
                     </div>
                 </div>
             </div>
+
+
         </section>
-
-
 
         <section class="vas-section">
             <div class="vas-container">
